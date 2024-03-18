@@ -21,12 +21,12 @@ public class Q4 {
 		
 		int middleNum;
 		
-		if(num1<=num2 && num1>=num3 || num1<=num3 && num1>=num2) {
-			middleNum=num1;
-		} else if(num2<=num1 && num2>=num3 || num2<=num3 && num2>=num1) {
-			middleNum=num2;
-		} else {
-			middleNum=num3;
+		if(num1>=num2 && num1<=num3 || num1>=num3 && num1<=num2) {
+			middleNum = num1;
+		}else if(num2>=num1 && num2<=num3 || num2>=num3 && num2<=num1) {
+			middleNum = num2;
+		}else {
+			middleNum = num3;
 		}
 		System.out.println("중간 값은 " + middleNum);
 	}

@@ -8,13 +8,13 @@ import java.util.Scanner;
    
    ====================
      금액을 입력하시오>>65376
-     오만원권 1메
-     만원권 1메
-     천원권 5메
-     백원 3게
-     오십원 1게
-     십원 2게
-     일원 6게
+     오만원권 1매
+     만원권 1매
+     천원권 5매
+     백원 3개
+     오십원 1개
+     십원 2개
+     일원 6개
   ====================
 */
 public class Q3 {
@@ -23,17 +23,21 @@ public class Q3 {
 		System.out.print("금액을 입력하시오>>");
 		int money = scan.nextInt();
 		
-		System.out.println("오만원권 " + money/50000 + "매");
-		money%=50000;
-		System.out.println("만원권 " + money/10000 + "매");
-		money%=10000;
-		System.out.println("천원권 " + money/1000 + "매");
-		money%=1000;
-		System.out.println("백원 " + money/100 + "개");
-		money%=100;
-		System.out.println("십원 " + money/10 + "개");
-		money%=10;
-		System.out.println("일원 " + money/1 + "개");
-		money%=1;
+		if(money>0) {
+			System.out.println("오만원권 " + money/50000 + "매");
+			money%=50000;
+			System.out.println("만원권 " + money/10000 + "매");
+			money%=10000;
+			System.out.println("천원권 " + money/1000 + "매");
+			money%=1000;
+			System.out.println("백원 " + money/100 + "개");
+			money%=100;
+			System.out.println("오십원 " + money/50 + "개");
+			money%=50;
+			System.out.println("십원 " + money/10 + "개");
+			money%=10;
+			System.out.println("일원 " + money/1 + "개");
+			money%=1;
+		}
 	}
 }
