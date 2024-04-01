@@ -1,4 +1,4 @@
-package ch2.반복문;
+package ch2.반복문과배열;
 
 import java.util.Random;
 import java.util.Scanner;
